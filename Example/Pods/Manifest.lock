@@ -9,7 +9,19 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SDWebImageWebPCoder (0.1.0)
+  - libwebp (1.2.1):
+    - libwebp/demux (= 1.2.1)
+    - libwebp/mux (= 1.2.1)
+    - libwebp/webp (= 1.2.1)
+  - libwebp/demux (1.2.1):
+    - libwebp/webp
+  - libwebp/mux (1.2.1):
+    - libwebp/demux
+  - libwebp/webp (1.2.1)
+  - SDWebImage/Core (5.12.0)
+  - SDWebImageWebPCoder (0.1.0):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.11)
   - Specta (1.0.7)
 
 DEPENDENCIES:
@@ -24,6 +36,8 @@ SPEC REPOS:
     - Expecta
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
+    - libwebp
+    - SDWebImage
     - Specta
 
 EXTERNAL SOURCES:
@@ -34,7 +48,9 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SDWebImageWebPCoder: 474712a1baf782ba5cea4aa285737ec07c9520d0
+  libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
+  SDWebImage: 4ea20cca2986adc5aacde07aa686742fd4c67a37
+  SDWebImageWebPCoder: 64ca6eeaee20f242be96de109a3ceeeead17ec82
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: 68cc005b206b15dd1115af96b7970e84fe0adc9a

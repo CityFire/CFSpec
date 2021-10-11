@@ -42,7 +42,7 @@ This is a SDWebImage coder plugin to support WebP image.
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SD_WEBP=1 WEBP_USE_INTRINSICS=1',
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
   }
-  s.dependency 'SDWebImage/Core', '~> 5.11'
+  s.dependency 'SDWebImage/Core', '~> 5.12.0'
   s.dependency 'libwebp', '~> 1.0'
 
 end
